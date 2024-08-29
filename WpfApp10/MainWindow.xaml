@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpfApp10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp10"
+        mc:Ignorable="d"
+        Title="IPv4 设置" Height="350" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- 网卡选择 -->
+        <Label Content="选择网卡:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
+        <ComboBox Name="NetworkInterfaceComboBox" Grid.Row="0" Grid.Column="1" Margin="5" Width="250"/>
+
+        <!-- 自动获取IP地址 -->
+        <CheckBox Name="AutoIPAddressCheckBox" Content="自动获取IP地址" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" IsChecked="True"/>
+
+        <!-- IP地址 -->
+        <Label Content="IP地址:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
+        <TextBox Name="IPAddressTextBox" Grid.Row="2" Grid.Column="1" Margin="5" IsEnabled="False"/>
+
+        <!-- 子网掩码 -->
+        <Label Content="子网掩码:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
+        <TextBox Name="SubnetMaskTextBox" Grid.Row="3" Grid.Column="1" Margin="5" IsEnabled="False"/>
+
+        <!-- 默认网关 -->
+        <Label Content="默认网关:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
+        <TextBox Name="GatewayTextBox" Grid.Row="4" Grid.Column="1" Margin="5" IsEnabled="False"/>
+
+        <!-- 自动获取DNS服务器地址 -->
+        <CheckBox Name="AutoDNSCheckBox" Content="自动获取DNS服务器地址" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" IsChecked="True"/>
+
+        <!-- 首选DNS服务器 -->
+        <Label Content="首选DNS服务器:" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
+        <TextBox Name="PreferredDNSTextBox" Grid.Row="6" Grid.Column="1" Margin="5" IsEnabled="False" Text="114.114.114.114"/>
+
+        <!-- 备用DNS服务器 -->
+        <Label Content="备用DNS服务器:" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
+        <TextBox Name="AlternateDNSTextBox" Grid.Row="7" Grid.Column="1" Margin="5" IsEnabled="False" Text="8.8.8.8"/>
+
+        <!-- 设置按钮 -->
+        <Button Content="应用设置" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5" Width="100" Click="ApplySettingsButton_Click"/>
+    </Grid>
+</Window>
