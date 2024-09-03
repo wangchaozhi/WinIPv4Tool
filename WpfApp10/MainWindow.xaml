@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp10"
         mc:Ignorable="d"
-        Title="IPv4 设置" Height="350" Width="400">
+        Title="IPv4 设置" Height="350" Width="400"  ResizeMode="CanResize"  MaxHeight="350" MaxWidth="420"   WindowStartupLocation="CenterScreen">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -25,7 +25,7 @@
 
         <!-- 网卡选择 -->
         <Label Content="选择网卡:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="5"/>
-        <ComboBox Name="NetworkInterfaceComboBox" Grid.Row="0" Grid.Column="1" Margin="5" Width="250"/>
+        <ComboBox Name="NetworkInterfaceComboBox" Grid.Row="0" Grid.Column="1" Margin="5" />
 
         <!-- 自动获取IP地址 -->
         <CheckBox Name="AutoIPAddressCheckBox" Content="自动获取IP地址" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" IsChecked="True"/>

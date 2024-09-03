@@ -1,5 +1,0 @@
-E:\RiderProjects\WpfApp10\WpfApp10\bin\Release\net8.0-windows\publish\WpfApp10.exe
-E:\RiderProjects\WpfApp10\WpfApp10\bin\Release\net8.0-windows\publish\WpfApp10.dll
-E:\RiderProjects\WpfApp10\WpfApp10\bin\Release\net8.0-windows\publish\WpfApp10.deps.json
-E:\RiderProjects\WpfApp10\WpfApp10\bin\Release\net8.0-windows\publish\WpfApp10.runtimeconfig.json
-E:\RiderProjects\WpfApp10\WpfApp10\bin\Release\net8.0-windows\publish\WpfApp10.pdb

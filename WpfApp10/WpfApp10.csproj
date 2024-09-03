@@ -7,6 +7,12 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <UseWPF>true</UseWPF>
 	    <ApplicationManifest>app.manifest</ApplicationManifest>
+		<AssemblyName>Ipv4Tool</AssemblyName>
+		<ApplicationIcon>res\IPv4.ico</ApplicationIcon>
     </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="res\IPv4.ico" />
+    </ItemGroup>
 
 </Project>
