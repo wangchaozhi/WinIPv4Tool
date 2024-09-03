@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Net.NetworkInformation;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace WpfApp10
 {
